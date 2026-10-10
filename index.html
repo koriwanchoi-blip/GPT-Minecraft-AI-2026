@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPT Minecraft AI</title>
+</head>
+<body>
+  <h1>⛏️ GPT Minecraft AI</h1>
+  <p>마인크래프트 AI 프로젝트에 오신 것을 환영합니다!</p>
+  <input id="question" placeholder="마인크래프트 질문을 입력하세요">
+  <button onclick="askAI()">질문하기</button>
+  <p id="answer">여기에 답변이 표시됩니다.</p>
+  <script>
+    function askAI() {
+      const q = document.getElementById('question').value;
+      document.getElementById('answer').textContent =
+        q ? '질문: ' + q + ' (AI 연결은 다음 단계에서 진행합니다.)' :
+        '질문을 입력해 주세요!';
+    }
+  </script>
+</body>
+</html>
